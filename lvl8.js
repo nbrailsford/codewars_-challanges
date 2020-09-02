@@ -8,3 +8,10 @@ let isDivideBy = (number, a, b) => {
     return false;
   }
 };
+
+// We want an array, but not just any old array, an array with contents!
+// Write a function that produces an array with the numbers 0 to N-1 in it.
+
+const arr = (n = 0) => [...Array(n).keys()];
+
+console.log(arr(5));
